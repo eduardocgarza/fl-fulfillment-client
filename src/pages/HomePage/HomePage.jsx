@@ -1,10 +1,13 @@
 import React from 'react'
-
+import { Button } from "@material-tailwind/react";
+ 
 export default function HomePage() {
   return (
     <div>
       <div>
         <h1>Dashboard</h1>
+        <Button>Test</Button>
+        
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
           repellendus totam cupiditate ullam provident explicabo ipsam nobis
@@ -13,7 +16,6 @@ export default function HomePage() {
         </p>
 
         <h2>Onboarding and Learning Materials</h2>
-        <div className="p-4 bg-orange-300"> test</div>
         <div className="p-6 bg-orange-300">
           <iframe
             width="640"
@@ -22,8 +24,7 @@ export default function HomePage() {
             frameBorder="0"
             allowFullScreen
             // @ts-ignore
-            mozallowfullscreen
-            allowfullscreen
+            // mozallowfullscreen
             title="Loom Onboarding Video"
           ></iframe>
         </div>
