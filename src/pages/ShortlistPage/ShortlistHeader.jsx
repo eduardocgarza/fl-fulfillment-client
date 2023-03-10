@@ -1,21 +1,22 @@
 import React from 'react'
 import { exampleJobPosting } from 'pages/JobPostingPage/JobPostingPage'
 import { Typography } from '@material-tailwind/react'
+import { Link } from 'react-router-dom'
 
 export default function ShortlistHeader() {
   const posting = exampleJobPosting
-  const { jobTitle, jobLocation, companyTeam } = posting
+  const { jobTitle, jobLocation, companyTeam, jobSummary } = posting
 
   return (
-    <div className="mb-6">
+    <div className="mb-[60px]">
       <header className="mb-6">
         <h1 className="text-3xl font-bold mb-2">Your candidates shortlist</h1>
         <p className="text-gray-600 mb-4">
           Delivered on <span className="text-black">March 18</span>
         </p>
       </header>
-      <div className="mb-6">
-        <h3 className="text-xl font-bold mr-2 my-0 mb-2">Job Position</h3>
+      <Link to="posting" className="block mb-6 bg-white hover:shadow-xl rounded-2xl py-10 px-8 shadow-lg mx-2">
+        <h3 className="text-xl font-bold mr-2 my-0 mb-2">Your Job Posting</h3>
         <h4 className="text-mb text-black font-semibold mr-2 my-0 mb-1">
           {jobTitle}
         </h4>
@@ -30,7 +31,10 @@ export default function ShortlistHeader() {
             {companyTeam}
           </Typography>
         </div>
-      </div>
+        <Typography className="text-sm mb-4 text-gray-900 leading-6">
+          {jobSummary}
+        </Typography>
+      </Link>
     </div>
   )
 }

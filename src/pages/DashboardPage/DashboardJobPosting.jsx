@@ -17,8 +17,8 @@ export default function DashboardJobPosting() {
   
   return (
     <div className="mb-8">
-      <div className="flex items-center">
-        <div className="bg-blue-600 rounded-xl p-1 flex items-center justify-center h-[30px] w-[30px] mr-2 shado-lg">
+      <div className="flex items-center mb-3">
+        <div className="bg-blue-600 rounded-xl p-1 flex items-center justify-center h-[30px] w-[30px] mr-2 shadow-lg">
           <ClipboardIcon className="h-4 w-4 text-white" />
         </div>
         <h3 className="text-xl font-semibold">Job Posting</h3>
@@ -34,14 +34,14 @@ export default function DashboardJobPosting() {
         </CardHeader>
         <CardBody>
           <div className="mb-1 flex items-center justify-between">
-            <Typography variant="h5" color="blue-gray" className="font-medium">
+            <Typography variant="h5" color="blue-gray" className="font-bold">
               {posting.jobTitle}
             </Typography>
           </div>
           <div className="flex mb-2">
             <p className="mb-1 text-sm mx-1">{posting.jobLocation}</p>
             <p className="mb-1 text-sm mx-1">{' • '}</p>
-            <p className="mb-1 text-sm mx-1">{}</p>
+            <p className="mb-1 text-sm mx-1">{posting.companyTeam}</p>
           </div>
           <Typography color="gray">{jobOverview}</Typography>
         </CardBody>

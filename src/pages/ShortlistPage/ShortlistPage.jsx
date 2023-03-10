@@ -8,8 +8,8 @@ import ShortlistOnboarding from "./ShortlistOnboarding"
 
 export default function ShortlistPage() {
   return (
-    <div className="container mx-auto bg-white my-8 py-8 px-6 rounded-xl shadow-lg">
-      <section className="row flex">
+    <div className="container mx-auto bg-white my-8 py-8 rounded-xl shadow-lg">
+      <section className="row px-6 flex">
         <section className="left w-1/2 px-2">
           <ShortlistHeader />
           <FeaturedShortlistCandidate />
@@ -22,7 +22,7 @@ export default function ShortlistPage() {
       <section className="row">
         <ShortlistCandidates />
       </section>
-      <section className="row">
+      <section className="row px-6">
         <ShortlistFooter />
       </section>
     </div>

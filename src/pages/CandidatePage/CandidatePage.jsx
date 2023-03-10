@@ -7,7 +7,7 @@ import CandidateProjects from './CandidateProjects'
 import CandidateMatchRanking from './CandidateMatchRanking'
 import CandidateFAQs from './CandidateFAQs'
 import CandidateWriteups from './CandidateWriteups'
-import { ArrowLeftIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid'
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid'
 
 export default function CandidatePage() {
   const { candidateId } = useParams()
