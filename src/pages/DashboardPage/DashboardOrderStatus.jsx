@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function DashboardOrderStatus() {
   return (
-    <div className="mb-6 border border-black">
+    <div className="mb-6">
       <div className="flex items-center mb-3">
         <div className="bg-blue-600 rounded-xl p-1 flex items-center justify-center h-[30px] w-[30px] mr-2 shado-lg">
           <ChartBarIcon className="h-4 w-4 text-white" />

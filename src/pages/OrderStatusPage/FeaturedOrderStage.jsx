@@ -51,7 +51,7 @@ export default function FeaturedOrderStage() {
   const lottieOptions = {
     loop: true,
     autoplay: true,
-    animationData: OrderStageAnimation10,
+    animationData: OrderStageAnimation4,
   }
 
   return (
