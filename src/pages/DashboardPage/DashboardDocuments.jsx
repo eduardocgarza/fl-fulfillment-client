@@ -36,19 +36,19 @@ export default function DashboardDocuments() {
           Agreement (NDA)
         </Button>
       </Link>
-      <Link to={testUrl} target="_blank">
+      <Link to={testUrl} target="_blank" className='pointer-events-none'>
         <Button variant="text" className="flex items-center gap-3" disabled>
           <PaperClipIcon strokeWidth={2} className="h-5 w-5" /> Invoice #1 -
           Retainer Payment
         </Button>
       </Link>
-      <Link to={testUrl} target="_blank">
+      <Link to={testUrl} target="_blank" className='pointer-events-none'>
         <Button variant="text" className="flex items-center gap-3" disabled>
           <PaperClipIcon strokeWidth={2} className="h-5 w-5" /> Invoice #2 -
           Shortlist Delivery Payment
         </Button>
       </Link>
-      <Link to={testUrl} target="_blank">
+      <Link to={testUrl} target="_blank" className='pointer-events-none'>
         <Button variant="text" className="flex items-center gap-3" disabled>
           <PaperClipIcon strokeWidth={2} className="h-5 w-5" /> Invoice #3 -
           Placement Delivery Payment

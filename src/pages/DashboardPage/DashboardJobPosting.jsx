@@ -7,14 +7,14 @@ import {
   CardHeader,
   Typography,
 } from '@material-tailwind/react'
+import { exampleJobPosting } from 'pages/JobPostingPage/JobPostingPage'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function DashboardJobPosting() {
-  const jobTitle = 'Director of Software Engineering, AWS'
-  const jobOverview =
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.'
-
+  const posting = exampleJobPosting
+  const jobOverview = `${posting.jobSummary.slice(0, 290)}...`
+  
   return (
     <div className="mb-8">
       <div className="flex items-center">
@@ -23,25 +23,31 @@ export default function DashboardJobPosting() {
         </div>
         <h3 className="text-xl font-semibold">Job Posting</h3>
       </div>
-      <Card className=" shadow-lg mx-2">
-        <CardHeader floated={false} color="blue-gray">
-          <img
-            src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-            alt="ui/ux review check"
-          />
-          <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
+      <Card className="shadow-lg mx-2">
+        <CardHeader floated={false}>
+          <iframe
+            src="https://www.loom.com/embed/221f217704be4b668928c1a4cacb2f0e"
+            className="w-full h-[400px] rounded-2xl"
+            allowFullScreen
+            title="Loom Onboarding Video"
+          ></iframe>
         </CardHeader>
         <CardBody>
-          <div className="mb-3 flex items-center justify-between">
+          <div className="mb-1 flex items-center justify-between">
             <Typography variant="h5" color="blue-gray" className="font-medium">
-              {jobTitle}
+              {posting.jobTitle}
             </Typography>
+          </div>
+          <div className="flex mb-2">
+            <p className="mb-1 text-sm mx-1">{posting.jobLocation}</p>
+            <p className="mb-1 text-sm mx-1">{' • '}</p>
+            <p className="mb-1 text-sm mx-1">{}</p>
           </div>
           <Typography color="gray">{jobOverview}</Typography>
         </CardBody>
-        <CardFooter className="pt-3">
+        <CardFooter className="flex justify-center mx-auto">
           <Link to="posting">
-            <Button size="lg" fullWidth={true}>
+            <Button size="lg" className='mt-0 rounded-full'>
               View posting
             </Button>
           </Link>

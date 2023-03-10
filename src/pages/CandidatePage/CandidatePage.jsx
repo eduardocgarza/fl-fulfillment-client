@@ -1,52 +1,48 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import CandidateOverview from './CandidateOverview'
+import CandidateSkills from './CandidateSkills'
+import CandidateCharacteristics from './CandidateCharacteristics'
+import CandidateProjects from './CandidateProjects'
+import CandidateMatchRanking from './CandidateMatchRanking'
+import CandidateFAQs from './CandidateFAQs'
+import CandidateWriteups from './CandidateWriteups'
+import { ArrowLeftIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid'
 
 export default function CandidatePage() {
   const { candidateId } = useParams()
   const candidateName = 'John Doe'
 
-  // Candidate Information
-  // Full Name (First Name, Middle Name, Last Name)
-  // Current Role or Last Role
-  // 60-Second Video Introduction
-  // FAQs Video Responses
-  // FL Recommendation – Percentage Match (%)
-  // FL Recommendation – Percentage Competence (%)
-  // Education
-  // Technical Skills
-  // Career Experience & Accomplishments
-  // Team and Role Fit
-  // Meets or Exceed Objectives
-  // Set of Technical Skills (Ranked)
-  // Set of Personal Characteristics (Ranked)
-  // Set of Projects
-  // Text Writeups
-  // Executive Summary
-  // Education and Experience
-  // Meets or Exceeds Objectives
-  // Team / Role Fit
-  // Location and Travel
-  // Desired Compensation
-  // Experience and Accomplishments
-  // Links and Documents
-  // Linkedin
-  // Github
-  // Website
-  // Cover Letter
-  // Resume
-
-  // Candidate Information
-  // Videos – Candidate FAQs Video Responses
-  // Video – Interpersonal Interview Video
-  // Video – Technical Interview Video
-  // Document – Resume
-  // Document – Cover Letter
-  // Link – Website
-  // Link – Github
-
   return (
-    <div>
-      <h1>Candidate - {candidateName}</h1>
+    <div className='my-6 py-8 shadow-xl min-h-screen flex'>
+      <div id="btn-left" className="min-h-full w-[75px] bg-gray-50 hover:bg-gray-100">
+        <button className="w-full h-full border-red-400 flex justify-center items-center">
+          <ChevronLeftIcon className="w-6 h-6" />
+        </button>
+      </div>
+      <div id="main" className="bg-white flex-1">
+
+        <section className="row flex bg-orange-100 mb-2">
+          <section className="left w-1/2">
+            <CandidateOverview />
+            <CandidateSkills />
+            <CandidateCharacteristics />
+            <CandidateProjects />
+          </section>
+          <section className="right w-1/2">
+            <CandidateMatchRanking />
+            <CandidateFAQs />
+          </section>
+        </section>
+        <section>
+          <CandidateWriteups />
+        </section>
+      </div>
+      <div id="btn-right" className="min-h-full w-[75px] bg-gray-50 hover:bg-gray-100">
+        <button className="w-full h-full border-red-400 flex justify-center items-center">
+          <ChevronRightIcon className="w-6 h-6" />
+        </button>
+      </div>
     </div>
   )
 }

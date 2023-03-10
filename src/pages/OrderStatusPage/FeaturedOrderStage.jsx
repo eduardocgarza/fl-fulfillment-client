@@ -8,6 +8,7 @@ import {
   Button,
   Tooltip,
   IconButton,
+  Chip,
 } from '@material-tailwind/react'
 import { orderStages } from 'assets/orderStages'
 import loader from './test.json'
@@ -61,10 +62,11 @@ export default function FeaturedOrderStage() {
           <StarIcon className="h-4 w-4 text-white" />
         </div>
         <h3 className="text-xl font-semibold mr-2 my-0">Current Stage</h3>
-        <Typography variant="h6" color="blue-gray" className="font-medium mt-1">
-          {stage.title}
-        </Typography>
+        <Chip color="red" value={stage.subTitle} className="rounded-full text-xs py-1 px-3 mr-2 text-white text-center" />
       </div>
+      <Typography variant="h5" color="blue-gray" className="font-medium mt-1">
+        {stage.title}
+      </Typography>
       <div className="my-6">
         <Lottie options={lottieOptions} style={{ height: 250 }} />
       </div>
