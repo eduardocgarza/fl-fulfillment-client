@@ -1,67 +1,35 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 export default function ShortlistPage() {
-  return (
-    <div>
-      <h1>Shortlist</h1>
-      <div>
+  // Schedule Interviews with Shortlisted Candidates
 
-        <h2>Schedule Interviews</h2>
-        <p>Schedule Interviews with Shortlisted Candidates</p>
-        
-        <h2>Shortlisted Candidates</h2>
-        <table>
-          <tr>
-            <td>Full Name</td>
-            <td>Current Role</td>
-            <td>% Match</td>
-            <td>% Competence</td>
-            <td>Linkedin</td>
-            <td>Github</td>
-            <td>Website</td>
-            <td>Cover Letter</td>
-            <td><Link to="/candidates/eduardo-garza">Profile</Link></td>
-            <td>Resume</td>
-          </tr>
-          <tr>
-            <td>Full Name</td>
-            <td>Current Role</td>
-            <td>% Match</td>
-            <td>% Competence</td>
-            <td>Linkedin</td>
-            <td>Github</td>
-            <td>Website</td>
-            <td>Cover Letter</td>
-            <td><Link to="/candidates/eduardo-garza">Profile</Link></td>
-            <td>Resume</td>
-          </tr>
-          <tr>
-            <td>Full Name</td>
-            <td>Current Role</td>
-            <td>% Match</td>
-            <td>% Competence</td>
-            <td>Linkedin</td>
-            <td>Github</td>
-            <td>Website</td>
-            <td>Cover Letter</td>
-            <td><Link to="/candidates/eduardo-garza">Profile</Link></td>
-            <td>Resume</td>
-          </tr>
-          <tr>
-            <td>Full Name</td>
-            <td>Current Role</td>
-            <td>% Match</td>
-            <td>% Competence</td>
-            <td>Linkedin</td>
-            <td>Github</td>
-            <td>Website</td>
-            <td>Cover Letter</td>
-            <td><Link to="/candidates/eduardo-garza">Profile</Link></td>
-            <td>Resume</td>
-          </tr>
-        </table>
-      </div>
+  // >> Candidate Row
+  // Full Name (First Name, Middle Name, Last Name)
+  // Current Role or Last Role
+  // FL Recommendation – Percentage Match (%)
+  // FL Recommendation – Percentage Competence (%)
+  // Education
+  // Technical Skills
+  // Career Experience & Accomplishments
+  // Team and Role Fit
+  // Meets or Exceed Objectives
+  // Links and Documents
+  // Linkedin
+  // Github
+  // Website
+  // Cover Letter
+  // Resume
+
+  return (
+    <div className="bg-white shadow-xl py-7 px-5 rounded-2xl container mx-auto my-6 min-h-full h-full">
+      <h1 className="text-3xl font-bold mb-6">Shortlist</h1>
+
+      <p className="mb-6">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
+        illum modi, at corrupti ipsa ratione ducimus. Accusantium, possimus? Id
+        exercitationem quo reprehenderit veniam distinctio ipsam quas adipisci
+        non cum consequuntur.
+      </p>
     </div>
   )
 }

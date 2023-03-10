@@ -1,7 +1,7 @@
 import React from 'react'
 import CandidatePage from 'pages/CandidatePage/CandidatePage'
 import ErrorPage from 'pages/ErrorPage/ErrorPage'
-import HomePage from 'pages/HomePage/HomePage'
+import DashboardPage from 'pages/DashboardPage/DashboardPage'
 import JobPostingPage from 'pages/JobPostingPage/JobPostingPage'
 import OrderStatusPage from 'pages/OrderStatusPage/OrderStatusPage'
 import ROICalculatorPage from 'pages/ROICalculatorPage/ROICalculatorPage'
@@ -19,7 +19,7 @@ export const appRouter = createBrowserRouter([
     children: [
       {
         path: '',
-        element: <HomePage />,
+        element: <DashboardPage />,
       },
       {
         path: 'status',

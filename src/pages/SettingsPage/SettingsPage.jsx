@@ -1,25 +1,22 @@
-import React from 'react'
+import React from "react"
 
 export default function SettingsPage() {
   return (
-    <div>
-      <h1>Settings</h1>
+    <div className="bg-white shadow-xl py-7 px-5 rounded-2xl container mx-auto my-6 min-h-full h-full">
+      <h1 className="text-3xl font-bold mb-6">Settings</h1>
 
-      <h2>Notifications Methods</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus delectus,
-        hic sunt molestias ex exercitationem tempora accusamus fugiat iusto quia
-        vitae magnam eum debitis voluptate possimus architecto numquam impedit
-        maxime.
+      <p className="mb-6">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias illum modi, at corrupti ipsa ratione ducimus. Accusantium, possimus? Id exercitationem quo reprehenderit veniam distinctio ipsam quas adipisci non cum consequuntur.
       </p>
 
-      <h2>Notifications Requests</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus delectus,
-        hic sunt molestias ex exercitationem tempora accusamus fugiat iusto quia
-        vitae magnam eum debitis voluptate possimus architecto numquam impedit
-        maxime.
-      </p>
+      <div className="mb-6">
+        <h2 className="text-xl font-bold mb-2">Communication Methods</h2>
+      </div>
+
+      <div className="mb-6">
+        <h2 className="text-xl font-bold mb-2">Notification Settings</h2>
+
+      </div>
     </div>
   )
 }

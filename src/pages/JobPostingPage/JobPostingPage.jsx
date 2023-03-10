@@ -1,106 +1,34 @@
-import React from 'react'
+import React from "react"
 
 export default function JobPostingPage() {
   return (
-    <div>
-      <h1>Job Posting</h1>
-      <h2>Company Name</h2>
-      <h2>Florian Laurent - Recruiter Partner</h2>
-      <h2>Job Title</h2>
-      <p>Industry</p>
-      <p>Location</p>
-      <p>Role Type</p>
-      <p>
-        <button>Apply Now</button>
+    <div className="bg-white shadow-xl py-7 px-5 rounded-2xl container mx-auto my-6 min-h-full h-full">
+      <h1 className="text-3xl font-bold mb-6">Job Posting</h1>
+
+      {/* Company Name */}
+      {/* Recruitment Partner Company Name (Florian Laurent) */}
+      {/* Job Title */}
+      {/* Industry  */}
+      {/* Location */}
+      {/* Role Type (In-Office / Remote / Hybrid) */}
+      {/* Button – Apply Now  */}
+
+      {/* Recruiting Company Intro */}
+      {/* Job Promotional Video */}
+      {/* Video on Job Post Page */}
+      {/* Video for Social Platforms (Facebook, Instagram, Linkedin, Tiktok, Youtube) */}
+      {/* Promotional Graphics for Social Platforms (Facebook, Instagram, Linkedin, Tiktok, Youtube) */}
+      {/* Opportunity at a Glance */}
+      {/* Primary Objectives of the Role */}
+      {/* Target Candidate Profile */}
+      {/* Top Reasons to Work for X */}
+      {/* Top Reasons to Move to Y */}
+      
+
+      <p className="mb-6">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias illum modi, at corrupti ipsa ratione ducimus. Accusantium, possimus? Id exercitationem quo reprehenderit veniam distinctio ipsam quas adipisci non cum consequuntur.
       </p>
 
-      <div>
-        <h2>About Company </h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-          illo modi, non ex provident esse quis repellendus consequatur at ipsum
-          ut est laborum commodi suscipit! Laboriosam, placeat cupiditate? Ad,
-          ea!
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-          illo modi, non ex provident esse quis repellendus consequatur at ipsum
-          ut est laborum commodi suscipit! Laboriosam, placeat cupiditate? Ad,
-          ea!
-        </p>
-
-        {/* Add Content */}
-      </div>
-
-      <div>
-        <h2>About Job</h2>
-        <iframe
-          width="640"
-          height="400"
-          src="https://www.loom.com/embed/221f217704be4b668928c1a4cacb2f0e"
-          frameBorder="0"
-          allowFullScreen
-          // @ts-ignore
-          mozallowfullscreen
-          allowfullscreen
-          title="Loom Onboarding Video"
-        ></iframe>
-        {/* Add Content */}
-      </div>
-
-      <div>
-        <h2>Opportunity at a Glance</h2>
-
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-          illo modi, non ex provident esse quis repellendus consequatur at ipsum
-          ut est laborum commodi suscipit! Laboriosam, placeat cupiditate? Ad,
-          ea!
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-          illo modi, non ex provident esse quis repellendus consequatur at ipsum
-          ut est laborum commodi suscipit! Laboriosam, placeat cupiditate? Ad,
-          ea!
-        </p>
-        {/* Add Content */}
-      </div>
-
-      <div>
-        <h2>Primary Objectives</h2>
-
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-          illo modi, non ex provident esse quis repellendus consequatur at ipsum
-          ut est laborum commodi suscipit! Laboriosam, placeat cupiditate? Ad,
-          ea!
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-          illo modi, non ex provident esse quis repellendus consequatur at ipsum
-          ut est laborum commodi suscipit! Laboriosam, placeat cupiditate? Ad,
-          ea!
-        </p>
-        {/* Add Content */}
-      </div>
-
-      <div>
-        <h2>Target Candidate Profile</h2>
-
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-          illo modi, non ex provident esse quis repellendus consequatur at ipsum
-          ut est laborum commodi suscipit! Laboriosam, placeat cupiditate? Ad,
-          ea!
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-          illo modi, non ex provident esse quis repellendus consequatur at ipsum
-          ut est laborum commodi suscipit! Laboriosam, placeat cupiditate? Ad,
-          ea!
-        </p>
-        {/* Add Content */}
-      </div>
     </div>
   )
 }
