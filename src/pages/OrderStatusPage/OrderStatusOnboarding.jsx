@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function OrderStatusOnboarding() {
   return (
-    <div className="mb-8">
-      <div className="mb-6">
+    <div className="mt-[30px] mb-8">
+      <div className="mb-10">
         <h2 className="text-3xl font-bold text-center mb-1">Learn the Hiring Process</h2>
         <p className="text-center text-md text-gray-800">
           Get to our Hiring Process in 100 seconds

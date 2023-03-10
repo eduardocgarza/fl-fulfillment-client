@@ -30,7 +30,7 @@ export default function JobPostingFooter(props) {
           Get personalized support from our knowledgeable recruiters throughout the hiring process.
         </p>
       </header>
-      <div className="flex justify-center bg-orange-200">
+      <div className="flex justify-center bg-orange-100 rounded-3xl">
         <PostingRepresentative />
         <PostingRepresentative />
       </div>

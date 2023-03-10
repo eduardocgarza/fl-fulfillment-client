@@ -74,7 +74,7 @@ export default function FeaturedOrderStage() {
         {stage.message}
       </Typography>
       <div className="flex justify-center">
-        <Button size="lg">{stage.cta}</Button>
+        <Button size="lg" className="rounded-full">{stage.cta}</Button>
       </div>
     </div>
   )

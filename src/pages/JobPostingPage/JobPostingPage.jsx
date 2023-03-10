@@ -1,11 +1,3 @@
-import {
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  CardHeader,
-  Typography,
-} from '@material-tailwind/react'
 import React from 'react'
 import JobPostingHeader from './JobPostingHeader'
 import JobPostingVideo from './JobPostingVideo'

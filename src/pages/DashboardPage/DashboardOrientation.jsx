@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function DashboardOrientation() {
   return (
-    <div className="mb-8">
+    <div className="mb-[60px]">
       <div className="mb-6">
         <h2 className="text-3xl font-bold text-center mb-1">Get Started</h2>
         <p className="text-center text-md text-gray-800">

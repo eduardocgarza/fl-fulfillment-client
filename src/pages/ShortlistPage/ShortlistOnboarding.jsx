@@ -3,7 +3,7 @@ import React from "react";
 export default function ShortlistOnboarding() {
   return (
     <div className="mb-8">
-      <div className="mb-6">
+      <div className="mb-10">
         <h2 className="text-3xl font-bold text-center mb-1">Explaining the Shortlist</h2>
         <p className="text-center text-md text-gray-800">
           Here's an explanation of the Candidates Shortlist in 100 seconds

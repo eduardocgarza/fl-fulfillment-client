@@ -79,7 +79,7 @@ export default function MainNav() {
         </Link>
         <div className="hidden lg:block">{navList}</div>
         <Link to="status">
-          <Button variant="gradient" size="sm" className="hidden lg:inline-block">
+          <Button variant="gradient" size="sm" className="hidden lg:inline-block rounded-full">
             <span>Order Status</span>
           </Button>
         </Link>
