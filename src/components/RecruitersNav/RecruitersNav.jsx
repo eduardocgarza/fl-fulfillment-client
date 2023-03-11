@@ -10,7 +10,7 @@ import {
   IconButton,
 } from '@material-tailwind/react'
 
-export default function MainNav() {
+export default function RecruitersNav() {
   const [openNav, setOpenNav] = useState(false)
 
   const companyName = 'Amazon'
@@ -32,21 +32,13 @@ export default function MainNav() {
       >
         <Link to="/">Dashboard</Link>
       </Typography>
-      {/* <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <Link to="/calculator">ROI Calculator</Link>
-      </Typography> */}
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link to="/posting">Job Posting</Link>
+        <Link to="/clients">Clients</Link>
       </Typography>
       <Typography
         as="li"
@@ -54,7 +46,7 @@ export default function MainNav() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link to="/candidates">Shortlist</Link>
+        <Link to="/analytics">Analytics</Link>
       </Typography>
       <Typography
         as="li"
@@ -78,9 +70,9 @@ export default function MainNav() {
           />
         </Link>
         <div className="hidden lg:block">{navList}</div>
-        <Link to="status">
+        <Link to="/create">
           <Button variant="gradient" size="sm" className="hidden lg:inline-block rounded-full">
-            <span>Order Status</span>
+            <span>Add Employer</span>
           </Button>
         </Link>
         <IconButton

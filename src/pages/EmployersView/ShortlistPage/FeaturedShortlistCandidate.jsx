@@ -1,8 +1,8 @@
 import React from 'react'
 import { StarIcon } from '@heroicons/react/24/solid'
 import { Typography } from '@material-tailwind/react'
-import { exampleJobPosting } from 'pages/JobPostingPage/JobPostingPage'
 import FeaturedCandidate from './FeaturedCandidate'
+import { exampleJobPosting } from '../JobPostingPage/JobPostingPage'
 
 export default function FeaturedShortlistCandidate() {
   const posting = exampleJobPosting

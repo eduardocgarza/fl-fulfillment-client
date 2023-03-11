@@ -1,6 +1,6 @@
 import { ChartBarIcon } from '@heroicons/react/24/solid'
-import FeaturedOrderStage from 'pages/OrderStatusPage/FeaturedOrderStage'
 import React from 'react'
+import FeaturedOrderStage from '../OrderStatusPage/FeaturedOrderStage'
 
 export default function DashboardOrderStatus() {
   return (
@@ -11,9 +11,7 @@ export default function DashboardOrderStatus() {
         </div>
         <h3 className="text-xl font-semibold">Order Status</h3>
       </div> */}
-
       <FeaturedOrderStage />
-
     </div>
   )
 }

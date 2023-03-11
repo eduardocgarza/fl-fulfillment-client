@@ -1,5 +1,5 @@
 import React from 'react'
-import PostingRepresentative from 'pages/JobPostingPage/PostingRepresentative'
+import PostingRepresentative from '../JobPostingPage/PostingRepresentative'
 
 export default function ShortlistFooter() {
   return (

@@ -2,8 +2,10 @@ import { StarIcon } from '@heroicons/react/24/solid'
 import { Typography } from '@material-tailwind/react'
 import React from 'react'
 import CandidateLinks from './CandidateLinks'
+import { Link } from 'react-router-dom'
 
 export default function CandidateHeader({ candidate }) {
+  const companyUrl = 'https://google.com/'
   const {
     photoUrl,
     fullName,
@@ -34,7 +36,7 @@ export default function CandidateHeader({ candidate }) {
   )
 
   return (
-    <div className="flex items-center border-b border-gray-200 pb-6 px-4">
+    <div className="flex items-center border-b border-gray-200 pb-6 px-4 mr-4">
       <img
         alt={fullName}
         className="block w-[120px] h-[120px] rounded-full mr-2 shadow-lg"
@@ -54,8 +56,10 @@ export default function CandidateHeader({ candidate }) {
             <Typography className="text-sm text-gray-900 mx-2">
               {' • '}
             </Typography>
-            <p className="text-sm leading-normal text-gray-700">
-              {currentCompany}
+            <p className="text-sm leading-normal text-blue-600 hover:text-blue-800">
+              <Link target="_blank" to={companyUrl} className="block">
+                {currentCompany}
+              </Link>
             </p>
             <Typography className="text-sm text-gray-900 mx-2">
               {' • '}

@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import reportWebVitals from './reportWebVitals'
 import { RouterProvider } from 'react-router-dom'
-import { appRouter } from 'appRouter'
+import { appRouter } from './router/appRouter'
 import { ThemeProvider } from "@material-tailwind/react";
 import './index.css'
 

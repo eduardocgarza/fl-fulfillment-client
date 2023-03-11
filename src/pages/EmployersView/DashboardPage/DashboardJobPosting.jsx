@@ -7,9 +7,9 @@ import {
   CardHeader,
   Typography,
 } from '@material-tailwind/react'
-import { exampleJobPosting } from 'pages/JobPostingPage/JobPostingPage'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { exampleJobPosting } from '../JobPostingPage/JobPostingPage'
 
 export default function DashboardJobPosting() {
   const posting = exampleJobPosting

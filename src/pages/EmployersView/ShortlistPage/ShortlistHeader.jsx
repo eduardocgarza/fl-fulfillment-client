@@ -1,7 +1,7 @@
 import React from 'react'
-import { exampleJobPosting } from 'pages/JobPostingPage/JobPostingPage'
 import { Typography } from '@material-tailwind/react'
 import { Link } from 'react-router-dom'
+import { exampleJobPosting } from '../JobPostingPage/JobPostingPage'
 
 export default function ShortlistHeader() {
   const posting = exampleJobPosting
